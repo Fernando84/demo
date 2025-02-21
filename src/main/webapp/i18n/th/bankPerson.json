@@ -1,0 +1,32 @@
+{
+  "letsBankApp": {
+    "bankPerson": {
+      "home": {
+        "title": "Bank People",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "สร้าง Bank Person",
+        "createOrEditLabel": "สร้างหรือแก้ไข Bank Person",
+        "notFound": "No Bank People found"
+      },
+      "created": "Bank Person ถูกสร้างด้วย {{ param }}",
+      "updated": "Bank Person ถูกแก้ไขด้วย {{ param }}",
+      "deleted": "Bank Person ถูกลบด้วย {{ param }}",
+      "delete": {
+        "question": "คุณต้องการที่จะลบ Bank Person {{ id }}?"
+      },
+      "detail": {
+        "title": "Bank Person"
+      },
+      "id": "Id",
+      "citizenId": "Citizen Id",
+      "thaiName": "Thai Name",
+      "englishName": "English Name",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "lastModifiedBy": "Last Modified By",
+      "lastModifiedDate": "Last Modified Date",
+      "bankCustomer": "Bank Customer",
+      "bankAccount": "Bank Account"
+    }
+  }
+}

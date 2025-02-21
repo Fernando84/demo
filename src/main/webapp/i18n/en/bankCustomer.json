@@ -1,0 +1,30 @@
+{
+  "letsBankApp": {
+    "bankCustomer": {
+      "home": {
+        "title": "Bank Customers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Bank Customer",
+        "createOrEditLabel": "Create or edit a Bank Customer",
+        "notFound": "No Bank Customers found"
+      },
+      "created": "A new Bank Customer is created with identifier {{ param }}",
+      "updated": "A Bank Customer is updated with identifier {{ param }}",
+      "deleted": "A Bank Customer is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Bank Customer {{ id }}?"
+      },
+      "detail": {
+        "title": "Bank Customer"
+      },
+      "id": "Id",
+      "email": "Email",
+      "pinCode": "Pin Code",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "lastModifiedBy": "Last Modified By",
+      "lastModifiedDate": "Last Modified Date",
+      "person": "Person"
+    }
+  }
+}

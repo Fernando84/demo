@@ -1,0 +1,109 @@
+
+application {
+  config {
+    applicationType monolith
+    authenticationType jwt
+    baseName LetsBank
+    buildTool maven
+    cacheProvider redis
+    clientFramework react
+    clientTheme flatly
+    clientThemeVariant primary
+    creationTimestamp 1739972482452
+    databaseType sql
+    devDatabaseType h2Disk
+    enableHibernateCache false
+    enableSwaggerCodegen true
+    enableTranslation true
+    jhiPrefix lets
+    jhipsterVersion "8.9.0"
+    jwtSecretKey "ZjE4ZTczZWUzZmViMDc0NWYxN2NhNzI2MmYyMmEyNzFmMzZkMmUzZjJiOTg4ZWMxODRjOWRlM2Q2NGQxMzg0ZThiMDM5N2I4N2ZjMTlmZjM4NTA2NTAxNTQxNjFjNDliYmY0YzA2ODVkZGExNzIzOTEyZGRjOGFjM2JjMzBmZmM="
+    languages [en, th]
+    microfrontends []
+    nativeLanguage en
+    packageName lets.bank
+    prodDatabaseType mysql
+    reactive false
+    testFrameworks []
+    withAdminUi true
+  }
+  entities *
+}
+
+@dto(mapstruct)
+@service(serviceImpl)
+@pagination(pagination)
+entity BankPerson {
+ @id id String maxlength(64)
+ citizenId String
+ thaiName String
+ englishName String
+ createdBy String maxlength(64)
+ createdDate Instant
+ lastModifiedBy String maxlength(64)
+ lastModifiedDate Instant
+}
+
+@dto(mapstruct)
+@service(serviceImpl)
+@pagination(pagination)
+entity BankCustomer {
+ @id id String maxlength(64)
+ email String maxlength(250)
+ pinCode String maxlength(64)
+ createdBy String maxlength(64)
+ createdDate Instant
+ lastModifiedBy String maxlength(64)
+ lastModifiedDate Instant
+}
+
+@dto(mapstruct)
+@service(serviceImpl)
+@pagination(pagination)
+entity BankTeller {
+ @id id String maxlength(64)
+ employeeId String maxlength(64)
+ thaiName String
+ englishName String
+ createdBy String maxlength(64)
+ createdDate Instant
+ lastModifiedBy String maxlength(64)
+ lastModifiedDate Instant
+}
+
+@dto(mapstruct)
+@service(serviceImpl)
+@pagination(pagination)
+entity BankAccount{
+ @id id String maxlength(64)
+ accountNumber String maxlength(64)
+ balance BigDecimal
+ createdBy String maxlength(64)
+ createdDate Instant
+ lastModifiedBy String maxlength(64)
+ lastModifiedDate Instant
+}
+
+@dto(mapstruct)
+@service(serviceImpl)
+@pagination(pagination)
+entity BankTransaction{
+ @id id String maxlength(64)
+ code String maxlength(64)
+ channel String maxlength(64)
+ amount BigDecimal
+ balance BigDecimal
+ targetAccountId String maxlength(64)
+ transactionDate Instant
+ remark String
+ createdBy String maxlength(64)
+ createdDate Instant
+ lastModifiedBy String maxlength(64)
+ lastModifiedDate Instant
+}
+
+relationship OneToOne {
+  BankCustomer{person} to BankPerson,
+  BankAccount{person} to BankPerson,
+  BankTransaction{account} to BankAccount
+}

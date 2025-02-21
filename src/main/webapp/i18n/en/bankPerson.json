@@ -1,0 +1,32 @@
+{
+  "letsBankApp": {
+    "bankPerson": {
+      "home": {
+        "title": "Bank People",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Bank Person",
+        "createOrEditLabel": "Create or edit a Bank Person",
+        "notFound": "No Bank People found"
+      },
+      "created": "A new Bank Person is created with identifier {{ param }}",
+      "updated": "A Bank Person is updated with identifier {{ param }}",
+      "deleted": "A Bank Person is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Bank Person {{ id }}?"
+      },
+      "detail": {
+        "title": "Bank Person"
+      },
+      "id": "Id",
+      "citizenId": "Citizen Id",
+      "thaiName": "Thai Name",
+      "englishName": "English Name",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "lastModifiedBy": "Last Modified By",
+      "lastModifiedDate": "Last Modified Date",
+      "bankCustomer": "Bank Customer",
+      "bankAccount": "Bank Account"
+    }
+  }
+}

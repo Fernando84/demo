@@ -1,0 +1,31 @@
+{
+  "letsBankApp": {
+    "bankAccount": {
+      "home": {
+        "title": "Bank Accounts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Bank Account",
+        "createOrEditLabel": "Create or edit a Bank Account",
+        "notFound": "No Bank Accounts found"
+      },
+      "created": "A new Bank Account is created with identifier {{ param }}",
+      "updated": "A Bank Account is updated with identifier {{ param }}",
+      "deleted": "A Bank Account is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Bank Account {{ id }}?"
+      },
+      "detail": {
+        "title": "Bank Account"
+      },
+      "id": "Id",
+      "accountNumber": "Account Number",
+      "balance": "Balance",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "lastModifiedBy": "Last Modified By",
+      "lastModifiedDate": "Last Modified Date",
+      "person": "Person",
+      "bankTransaction": "Bank Transaction"
+    }
+  }
+}

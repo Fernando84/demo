@@ -1,0 +1,30 @@
+{
+  "letsBankApp": {
+    "bankCustomer": {
+      "home": {
+        "title": "Bank Customers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "สร้าง Bank Customer",
+        "createOrEditLabel": "สร้างหรือแก้ไข Bank Customer",
+        "notFound": "No Bank Customers found"
+      },
+      "created": "Bank Customer ถูกสร้างด้วย {{ param }}",
+      "updated": "Bank Customer ถูกแก้ไขด้วย {{ param }}",
+      "deleted": "Bank Customer ถูกลบด้วย {{ param }}",
+      "delete": {
+        "question": "คุณต้องการที่จะลบ Bank Customer {{ id }}?"
+      },
+      "detail": {
+        "title": "Bank Customer"
+      },
+      "id": "Id",
+      "email": "Email",
+      "pinCode": "Pin Code",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "lastModifiedBy": "Last Modified By",
+      "lastModifiedDate": "Last Modified Date",
+      "person": "Person"
+    }
+  }
+}

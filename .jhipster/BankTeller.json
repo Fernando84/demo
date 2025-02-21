@@ -1,0 +1,57 @@
+{
+  "annotations": {
+    "changelogDate": "20250220074601",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl"
+  },
+  "applications": ["LetsBank"],
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "64",
+      "options": {
+        "id": true
+      }
+    },
+    {
+      "fieldName": "employeeId",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "64"
+    },
+    {
+      "fieldName": "thaiName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "englishName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "64"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "lastModifiedBy",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "64"
+    },
+    {
+      "fieldName": "lastModifiedDate",
+      "fieldType": "Instant"
+    }
+  ],
+  "name": "BankTeller",
+  "relationships": [],
+  "searchEngine": "no"
+}

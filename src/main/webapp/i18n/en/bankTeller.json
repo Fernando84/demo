@@ -1,0 +1,30 @@
+{
+  "letsBankApp": {
+    "bankTeller": {
+      "home": {
+        "title": "Bank Tellers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Bank Teller",
+        "createOrEditLabel": "Create or edit a Bank Teller",
+        "notFound": "No Bank Tellers found"
+      },
+      "created": "A new Bank Teller is created with identifier {{ param }}",
+      "updated": "A Bank Teller is updated with identifier {{ param }}",
+      "deleted": "A Bank Teller is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Bank Teller {{ id }}?"
+      },
+      "detail": {
+        "title": "Bank Teller"
+      },
+      "id": "Id",
+      "employeeId": "Employee Id",
+      "thaiName": "Thai Name",
+      "englishName": "English Name",
+      "createdBy": "Created By",
+      "createdDate": "Created Date",
+      "lastModifiedBy": "Last Modified By",
+      "lastModifiedDate": "Last Modified Date"
+    }
+  }
+}
