@@ -2,23 +2,23 @@
 
 This application was generated using JHipster 8.9.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v8.9.0](https://www.jhipster.tech/documentation-archive/v8.9.0).
 
-## Project Structure
+## How to run the application
 
-Node is required for generation and recommended for development. `package.json` is always generated for a better development experience with prettier, commit hooks, scripts and so on.
+Download the source code.
 
-In the project root, JHipster generates configuration files for tools like git, prettier, eslint, husky, and others that are well known and you can find references in the web.
+Build your docker image:
 
-`/src/*` structure follows default Java structure.
+```bash
+./npmw run java:docker:dev
+```
 
-- `.yo-rc.json` - Yeoman configuration file
-  JHipster configuration is stored in this file at `generator-jhipster` key. You may find `generator-jhipster-*` for specific blueprints configuration.
-- `.yo-resolve` (optional) - Yeoman conflict resolver
-  Allows to use a specific action when conflicts are found skipping prompts for files that matches a pattern. Each line should match `[pattern] [action]` with pattern been a [Minimatch](https://github.com/isaacs/minimatch#minimatch) pattern and action been one of skip (default if omitted) or force. Lines starting with `#` are considered comments and are ignored.
-- `.jhipster/*.json` - JHipster entity configuration files
+run your image:
 
-- `npmw` - wrapper to use locally installed npm.
-  JHipster installs Node and npm locally using the build tool by default. This wrapper makes sure npm is installed locally and uses it avoiding some differences different versions can cause. By using `./npmw` instead of the traditional `npm` you can configure a Node-less environment to develop or test your application.
-- `/src/main/docker` - Docker configurations for the application and services that the application depends on
+```bash
+./npmw run app:run
+```
+
+Access your [http://localhost:8080](localhost:8080), then you will see the homepage.
 
 ## Development
 
@@ -158,7 +158,7 @@ docker compose -f src/main/docker/jhipster-control-center.yml up
 
 ### Spring Boot tests
 
-To launch your application's tests, run:
+To launch your application's tests( Your local Docker should be started, otherwise some cases will not pass), run:
 
 ```
 ./mvnw verify
@@ -257,22 +257,3 @@ For more information refer to [Using Docker and Docker-Compose][], this page als
 ## Continuous Integration (optional)
 
 To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`), this will let you generate configuration files for a number of Continuous Integration systems. Consult the [Setting up Continuous Integration][] page for more information.
-
-[JHipster Homepage and latest documentation]: https://www.jhipster.tech
-[JHipster 8.9.0 archive]: https://www.jhipster.tech/documentation-archive/v8.9.0
-[Using JHipster in development]: https://www.jhipster.tech/documentation-archive/v8.9.0/development/
-[Using Docker and Docker-Compose]: https://www.jhipster.tech/documentation-archive/v8.9.0/docker-compose
-[Using JHipster in production]: https://www.jhipster.tech/documentation-archive/v8.9.0/production/
-[Running tests page]: https://www.jhipster.tech/documentation-archive/v8.9.0/running-tests/
-[Code quality page]: https://www.jhipster.tech/documentation-archive/v8.9.0/code-quality/
-[Setting up Continuous Integration]: https://www.jhipster.tech/documentation-archive/v8.9.0/setting-up-ci/
-[Node.js]: https://nodejs.org/
-[NPM]: https://www.npmjs.com/
-[OpenAPI-Generator]: https://openapi-generator.tech
-[Swagger-Editor]: https://editor.swagger.io
-[Doing API-First development]: https://www.jhipster.tech/documentation-archive/v8.9.0/doing-api-first-development/
-[Webpack]: https://webpack.github.io/
-[BrowserSync]: https://www.browsersync.io/
-[Jest]: https://jestjs.io
-[Leaflet]: https://leafletjs.com/
-[DefinitelyTyped]: https://definitelytyped.org/
